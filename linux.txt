@@ -1,0 +1,231 @@
+1. Introduction to Linux
+1.1 What is Linux
+
+Linux is an open-source operating system kernel created by Linus Torvalds (1991)
+
+It is used in:
+
+Servers
+
+Smartphones (Android)
+
+Supercomputers
+
+Embedded systems
+
+1.2 Features of Linux
+
+Open source and free
+
+Multi-user system
+
+Multitasking capability
+
+Strong security and permissions
+
+Portable across hardware
+
+Stable and reliable
+
+1.3 Linux Distributions (Distros)
+
+A Linux distro = Kernel + software + package manager
+
+Examples:
+
+Ubuntu
+
+Fedora
+
+Debian
+
+CentOS
+
+Arch Linux
+
+2. Linux Architecture
+2.1 Components of Linux
+
+Kernel
+
+Core part of OS
+
+Manages hardware and processes
+
+Shell
+
+Interface between user and kernel
+
+Examples: Bash, Zsh
+
+File System
+
+Organizes data in directories
+
+System Utilities
+
+Tools for managing system
+
+3. Linux File System
+3.1 Directory Structure
+
+Linux uses a hierarchical structure (tree-like)
+
+Important directories:
+
+/ → Root directory
+
+/home → User files
+
+/etc → Configuration files
+
+/bin → Essential commands
+
+/var → Logs and variable data
+
+/tmp → Temporary files
+
+3.2 File Types
+
+Regular files
+
+Directories
+
+Device files
+
+Symbolic links
+
+4. Basic Linux Commands
+4.1 File and Directory Commands
+
+ls → list files
+
+pwd → present working directory
+
+cd → change directory
+
+mkdir → create directory
+
+rm → remove files
+
+4.2 File Handling
+
+touch → create file
+
+cp → copy file
+
+mv → move/rename file
+
+cat → view file content
+
+4.3 Permissions Commands
+
+chmod → change permissions
+
+chown → change ownership
+
+5. File Permissions in Linux
+5.1 Types of Permissions
+
+Read (r)
+
+Write (w)
+
+Execute (x)
+
+5.2 Permission Levels
+
+User (owner)
+
+Group
+
+Others
+
+5.3 Example
+
+rwxr-xr--
+
+Owner: full access
+
+Group: read + execute
+
+Others: read only
+
+6. Process Management
+6.1 What is a Process
+
+A process is a running program
+
+6.2 Commands
+
+ps → view processes
+
+top → real-time processes
+
+kill → terminate process
+
+6.3 Foreground vs Background
+
+Foreground: runs on terminal
+
+Background: runs with &
+
+7. Package Management
+7.1 What is Package Manager
+
+Tool to install and manage software
+
+7.2 Examples
+
+apt (Ubuntu/Debian)
+
+yum or dnf (CentOS/Fedora)
+
+pacman (Arch)
+
+8. Shell and Scripting
+8.1 Shell Types
+
+Bash (most common)
+
+Zsh
+
+Sh
+
+8.2 Shell Script
+
+A file containing Linux commands
+
+8.3 Basic Example
+#!/bin/bash
+echo "Hello Linux"
+9. Networking in Linux
+9.1 Basic Commands
+
+ifconfig or ip a → check IP
+
+ping → test connectivity
+
+netstat → network stats
+
+9.2 SSH
+
+Secure remote login
+
+Command:
+
+ssh user@ip_address
+10. Advantages and Disadvantages
+10.1 Advantages
+
+Free and open source
+
+Secure and stable
+
+Highly customizable
+
+10.2 Disadvantages
+
+Steep learning curve
+
+Limited support for some software
