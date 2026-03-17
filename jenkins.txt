@@ -1,0 +1,193 @@
+1. Introduction to Jenkins
+1.1 What is Jenkins
+
+Jenkins is an open-source automation server
+
+Used to implement CI/CD pipelines
+
+Automates:
+
+Build
+
+Testing
+
+Deployment
+
+1.2 History
+
+Originally called Hudson
+
+Later renamed to Jenkins
+
+1.3 Features
+
+Open source
+
+Extensible via plugins
+
+Supports CI/CD
+
+Platform independent
+
+2. Jenkins Architecture
+2.1 Components
+
+Jenkins Master (Controller)
+
+Controls the system
+
+Schedules jobs
+
+Jenkins Agent (Slave)
+
+Executes tasks assigned by master
+
+Jenkins Jobs
+
+Tasks or projects configured in Jenkins
+
+Plugins
+
+Add extra features (Git, Docker, etc.)
+
+3. Installation of Jenkins (Linux)
+3.1 Install Java (Prerequisite)
+sudo apt install openjdk-11-jdk
+3.2 Install Jenkins
+sudo apt update
+sudo apt install jenkins
+3.3 Start Jenkins
+sudo systemctl start jenkins
+sudo systemctl enable jenkins
+3.4 Access Jenkins
+
+Open browser:
+
+http://<server-ip>:8080
+4. Jenkins Dashboard
+4.1 Main Sections
+
+Dashboard → overview
+
+New Item → create job
+
+Build History → past builds
+
+Manage Jenkins → settings
+
+5. Jenkins Jobs
+5.1 Types of Jobs
+
+Freestyle Project
+
+Pipeline Project
+
+Multibranch Pipeline
+
+5.2 Create Job
+
+Click “New Item”
+
+Enter name
+
+Select job type
+
+Configure build steps
+
+6. Jenkins Pipeline
+6.1 What is Pipeline
+
+Defines CI/CD workflow as code
+
+6.2 Types
+
+Declarative Pipeline
+
+Scripted Pipeline
+
+6.3 Example (Declarative)
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building...'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing...'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying...'
+            }
+        }
+    }
+}
+7. Jenkins with GitHub
+7.1 Integration Steps
+
+Connect GitHub repository
+
+Configure webhook
+
+Trigger build on push
+
+7.2 Flow
+
+Code push → Jenkins trigger → Build → Test → Deploy
+
+8. Jenkins Build Process
+8.1 Steps
+
+Source code fetch
+
+Build
+
+Test
+
+Package
+
+Deploy
+
+9. Plugins in Jenkins
+9.1 Common Plugins
+
+Git Plugin
+
+Pipeline Plugin
+
+Docker Plugin
+
+Blue Ocean
+
+10. Jenkins Security
+10.1 Features
+
+User authentication
+
+Role-based access control
+
+Secure credentials storage
+
+11. Advantages of Jenkins
+11.1 Benefits
+
+Open source
+
+Highly customizable
+
+Large plugin ecosystem
+
+Strong community support
+
+12. Disadvantages of Jenkins
+12.1 Limitations
+
+Complex setup
+
+Plugin dependency issues
+
+Requires maintenance
