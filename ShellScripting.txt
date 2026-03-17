@@ -1,0 +1,142 @@
+1. Introduction to Shell Scripting
+1.1 What is Shell
+
+Shell is a command-line interpreter
+
+Acts as a bridge between user and Linux kernel
+
+1.2 What is Shell Scripting
+
+Writing a sequence of commands in a file to automate tasks
+
+File usually ends with .sh
+
+1.3 Types of Shells
+
+Bash (Bourne Again Shell)
+
+Sh (Bourne Shell)
+
+Zsh
+
+Ksh
+
+2. Basics of Shell Script
+2.1 Shebang
+
+First line of script
+
+#!/bin/bash
+
+Tells system which shell to use
+
+2.2 Creating Script
+touch script.sh
+chmod +x script.sh
+./script.sh
+3. Variables in Shell
+3.1 Declaring Variables
+name="Aditya"
+3.2 Using Variables
+echo $name
+3.3 Rules
+
+No space around =
+
+Case-sensitive
+
+4. Input and Output
+4.1 Output
+echo "Hello World"
+4.2 User Input
+read name
+echo "Hello $name"
+5. Conditional Statements
+5.1 if Statement
+if [ $a -gt 10 ]
+then
+  echo "Greater"
+fi
+5.2 if-else
+if [ $a -gt 10 ]
+then
+  echo "Greater"
+else
+  echo "Smaller"
+fi
+6. Loops in Shell
+6.1 for Loop
+for i in 1 2 3
+do
+  echo $i
+done
+6.2 while Loop
+while [ $i -lt 5 ]
+do
+  echo $i
+  ((i++))
+done
+7. Functions in Shell
+7.1 Define Function
+function greet() {
+  echo "Hello"
+}
+7.2 Call Function
+greet
+8. Positional Parameters
+8.1 What are Parameters
+
+Inputs passed while running script
+
+8.2 Example
+echo $1
+echo $2
+
+Run:
+
+./script.sh hello world
+9. Operators in Shell
+9.1 Arithmetic Operators
+
++, -, *, /
+
+9.2 Relational Operators
+
+-eq, -ne, -gt, -lt, -ge, -le
+
+10. File Handling in Shell
+10.1 Check File
+if [ -f file.txt ]
+then
+  echo "File exists"
+fi
+10.2 Read File
+cat file.txt
+11. Useful Shell Commands in Scripts
+11.1 Common Commands
+
+date → current date
+
+whoami → current user
+
+pwd → current directory
+
+12. Advantages of Shell Scripting
+12.1 Benefits
+
+Automates repetitive tasks
+
+Saves time
+
+Easy to write and execute
+
+Useful in DevOps
+
+13. Limitations of Shell Scripting
+13.1 Drawbacks
+
+Not suitable for large applications
+
+Limited error handling
+
+Slower than compiled languages
