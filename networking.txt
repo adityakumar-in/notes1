@@ -1,0 +1,165 @@
+1. Introduction to Linux Networking
+1.1 What is Networking in Linux
+
+Networking in Linux means communication between computers/systems
+
+It allows:
+
+Data transfer
+
+Remote login
+
+Internet access
+
+1.2 Types of Networks
+
+LAN (Local Area Network)
+
+WAN (Wide Area Network)
+
+MAN (Metropolitan Area Network)
+
+2. Network Configuration
+2.1 IP Address
+
+A unique identifier for a system in a network
+
+Example: 192.168.1.1
+
+2.2 Types of IP
+
+Static IP → fixed
+
+Dynamic IP → assigned automatically (via DHCP)
+
+2.3 Check IP Address
+ip a
+
+or
+
+ifconfig
+3. Network Configuration Files
+3.1 Important Files
+
+/etc/network/interfaces → Debian-based config
+
+/etc/hosts → hostname mapping
+
+/etc/resolv.conf → DNS configuration
+
+3.2 Example
+
+/etc/hosts
+
+127.0.0.1   localhost
+192.168.1.10 server1
+4. Basic Networking Commands
+4.1 Connectivity Commands
+
+ping → check if host is reachable
+
+ping google.com
+
+traceroute → shows path packets take
+
+host / nslookup → DNS lookup
+
+4.2 Interface Commands
+
+ip a → show IP addresses
+
+ip link → show interfaces
+
+ifconfig → old command for network config
+
+4.3 Network Statistics
+
+netstat → shows connections, ports
+
+ss → modern alternative of netstat
+
+5. SSH (Secure Shell)
+5.1 What is SSH
+
+Protocol for secure remote login
+
+5.2 Basic Command
+ssh username@ip_address
+5.3 Use Cases
+
+Remote server access
+
+File transfer
+
+Running commands remotely
+
+6. File Transfer in Linux
+6.1 SCP (Secure Copy)
+scp file.txt user@ip:/home/user/
+6.2 Rsync
+
+Efficient file transfer and syncing
+
+rsync -av file.txt user@ip:/home/user/
+7. Ports and Services
+7.1 What is a Port
+
+Logical endpoint for communication
+
+7.2 Common Ports
+
+22 → SSH
+
+80 → HTTP
+
+443 → HTTPS
+
+21 → FTP
+
+8. Firewall in Linux
+8.1 What is Firewall
+
+Controls incoming/outgoing traffic
+
+8.2 Tools
+
+ufw (Ubuntu)
+
+iptables (advanced)
+
+8.3 Example (UFW)
+sudo ufw allow 22
+sudo ufw enable
+9. DNS (Domain Name System)
+9.1 What is DNS
+
+Converts domain names → IP addresses
+
+9.2 Example
+
+google.com → 142.x.x.x
+
+9.3 DNS Config File
+
+/etc/resolv.conf
+
+10. Troubleshooting Networking
+10.1 Common Commands
+
+ping → check connectivity
+
+traceroute → find route issue
+
+netstat -tuln → check open ports
+
+ss -tuln → modern alternative
+
+10.2 Basic Checks
+
+Check IP assigned
+
+Check cable/network
+
+Check firewall
+
+Check DNS
