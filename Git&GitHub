@@ -1,0 +1,146 @@
+1. Introduction to Git and GitHub
+1.1 What is Git
+
+Git is a distributed version control system (VCS)
+
+It tracks changes in code/files over time
+
+Created by Linus Torvalds (2005)
+
+1.2 What is GitHub
+
+GitHub is a cloud platform to host Git repositories
+
+Used for:
+
+Collaboration
+
+Code sharing
+
+Version management
+
+1.3 Difference Between Git and GitHub
+
+Git → tool (local system)
+
+GitHub → platform (remote server)
+
+2. Git Architecture
+2.1 Three Main Areas
+
+Working Directory
+
+Where you edit files
+
+Staging Area (Index)
+
+Where changes are prepared
+
+Repository (Local Repo)
+
+Where commits are stored
+
+3. Git Installation and Setup
+3.1 Install Git
+
+Linux:
+
+sudo apt install git
+3.2 Configure Git
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+4. Basic Git Commands
+4.1 Initialize Repository
+git init
+4.2 Check Status
+git status
+4.3 Add Files
+git add file.txt
+git add .
+4.4 Commit Changes
+git commit -m "message"
+5. Branching in Git
+5.1 What is Branch
+
+A branch is a separate line of development
+
+5.2 Commands
+git branch
+git branch new-branch
+git checkout new-branch
+git switch new-branch
+5.3 Merge Branch
+git merge branch-name
+6. Remote Repository (GitHub)
+6.1 Add Remote
+git remote add origin https://github.com/user/repo.git
+6.2 Push Code
+git push -u origin main
+6.3 Pull Code
+git pull origin main
+6.4 Clone Repository
+git clone https://github.com/user/repo.git
+7. Git Workflow
+7.1 Basic Workflow
+
+Modify files
+
+git add
+
+git commit
+
+git push
+
+7.2 Collaboration Workflow
+
+Clone repo
+
+Create branch
+
+Make changes
+
+Push branch
+
+Create Pull Request
+
+8. GitHub Concepts
+8.1 Repository
+
+Storage space for project
+
+8.2 Fork
+
+Copy of another repository
+
+8.3 Pull Request (PR)
+
+Request to merge changes
+
+8.4 Issues
+
+Track bugs/tasks
+
+9. Git Commands for History
+9.1 View Logs
+git log
+9.2 Short Log
+git log --oneline
+9.3 Difference
+git diff
+10. Undoing Changes
+10.1 Unstage File
+git reset file.txt
+10.2 Undo Commit
+git reset --soft HEAD~1
+10.3 Discard Changes
+git checkout -- file.txt
+11. Advantages of Git
+11.1 Benefits
+
+Distributed system
+
+Fast and efficient
+
+Supports branching
+
+Easy collaboration
