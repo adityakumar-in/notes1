@@ -1,0 +1,160 @@
+1. Introduction to Docker
+1.1 What is Docker
+
+Docker is a containerization platform
+
+It allows applications to run in isolated environments (containers)
+
+Ensures “works on my machine” problem is solved
+
+1.2 Why Docker is Used
+
+Consistency across environments
+
+Lightweight compared to virtual machines
+
+Faster deployment
+
+Easy scalability
+
+2. Docker Architecture
+2.1 Components of Docker
+
+Docker Client
+
+Interface to interact with Docker
+
+Commands like docker run, docker build
+
+Docker Daemon
+
+Runs in background
+
+Manages containers, images
+
+Docker Images
+
+Read-only templates
+
+Used to create containers
+
+Docker Containers
+
+Running instance of an image
+
+Docker Registry
+
+Stores images
+
+Example: Docker Hub
+
+3. Docker vs Virtual Machine
+3.1 Key Differences
+Feature	Docker	Virtual Machine
+Size	Lightweight	Heavy
+Boot time	Seconds	Minutes
+OS	Shares host OS	Separate OS
+Performance	Faster	Slower
+4. Docker Installation (Linux)
+4.1 Install Docker
+sudo apt update
+sudo apt install docker.io
+4.2 Start Docker
+sudo systemctl start docker
+sudo systemctl enable docker
+4.3 Check Version
+docker --version
+5. Basic Docker Commands
+5.1 Images
+docker pull nginx
+docker images
+docker rmi image_id
+5.2 Containers
+docker run nginx
+docker ps
+docker ps -a
+docker stop container_id
+docker rm container_id
+6. Docker Image and Container Lifecycle
+6.1 Lifecycle Steps
+
+Pull image
+
+Create container
+
+Run container
+
+Stop container
+
+Remove container
+
+7. Dockerfile
+7.1 What is Dockerfile
+
+A text file with instructions to build an image
+
+7.2 Example
+FROM ubuntu
+RUN apt update
+CMD ["echo", "Hello Docker"]
+7.3 Build Image
+docker build -t myimage .
+8. Docker Volumes
+8.1 What are Volumes
+
+Used to persist data outside containers
+
+8.2 Example
+docker run -v /host/data:/container/data nginx
+9. Docker Networking
+9.1 Types of Networks
+
+Bridge (default)
+
+Host
+
+None
+
+9.2 Example
+docker network ls
+docker network create mynetwork
+10. Docker Compose
+10.1 What is Docker Compose
+
+Tool to manage multi-container applications
+
+10.2 Example
+version: '3'
+services:
+  web:
+    image: nginx
+  db:
+    image: mysql
+10.3 Run Compose
+docker-compose up
+11. Docker Hub
+11.1 What is Docker Hub
+
+Public registry for Docker images
+
+11.2 Commands
+docker login
+docker push username/image
+12. Advantages and Disadvantages
+12.1 Advantages
+
+Lightweight
+
+Fast deployment
+
+Scalable
+
+Consistent environments
+
+12.2 Disadvantages
+
+Less isolation than VMs
+
+Security concerns if misconfigured
+
+Requires learning
