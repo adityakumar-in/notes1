@@ -1,0 +1,167 @@
+1. Introduction to CI/CD
+1.1 What is CI/CD
+
+CI/CD stands for:
+
+CI (Continuous Integration)
+
+CD (Continuous Delivery / Continuous Deployment)
+
+It is a DevOps practice that automates software build, testing, and deployment
+
+1.2 Goals of CI/CD
+
+Faster development
+
+Early bug detection
+
+Automated deployment
+
+Improved software quality
+
+2. Continuous Integration (CI)
+2.1 What is CI
+
+Developers frequently merge code into a shared repository
+
+Each merge triggers:
+
+Build process
+
+Automated tests
+
+2.2 CI Workflow
+
+Developer writes code
+
+Push to Git repository
+
+CI tool detects changes
+
+Build starts
+
+Tests run
+
+Feedback is generated
+
+2.3 Benefits of CI
+
+Detect bugs early
+
+Reduce integration issues
+
+Maintain code quality
+
+3. Continuous Delivery (CD)
+3.1 What is Continuous Delivery
+
+Code is automatically prepared for release
+
+Deployment requires manual approval
+
+3.2 Process
+
+Build → Test → Ready for deployment
+
+4. Continuous Deployment
+4.1 What is Continuous Deployment
+
+Fully automated deployment
+
+Every successful change is deployed to production
+
+4.2 Difference from Delivery
+
+Delivery → manual deploy
+
+Deployment → automatic deploy
+
+5. CI/CD Pipeline
+5.1 What is Pipeline
+
+A sequence of automated steps in software delivery
+
+5.2 Stages of Pipeline
+
+Source Stage
+
+Code pushed to Git
+
+Build Stage
+
+Compile code
+
+Test Stage
+
+Run automated tests
+
+Deploy Stage
+
+Deploy to server
+
+6. CI/CD Tools
+6.1 Popular Tools
+
+Jenkins
+
+GitHub Actions
+
+GitLab CI/CD
+
+CircleCI
+
+6.2 Jenkins
+
+Open-source automation server
+
+Widely used for CI/CD pipelines
+
+7. CI/CD with Jenkins (Basic Flow)
+7.1 Steps
+
+Developer pushes code to GitHub
+
+Jenkins detects changes
+
+Jenkins builds project
+
+Runs tests
+
+Deploys application
+
+8. CI/CD with Docker
+8.1 Role of Docker
+
+Package application into containers
+
+Ensure same environment everywhere
+
+8.2 Flow
+
+Code pushed
+
+Build Docker image
+
+Push image to registry
+
+Deploy container
+
+9. Advantages of CI/CD
+9.1 Benefits
+
+Faster delivery
+
+Reduced manual errors
+
+Continuous feedback
+
+Better collaboration
+
+10. Challenges of CI/CD
+10.1 Issues
+
+Initial setup complexity
+
+Requires proper testing
+
+Security concerns
